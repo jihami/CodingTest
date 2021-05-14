@@ -2,7 +2,7 @@ def solution(arr):
     left = 0
     right = len(arr)-1
     #todo : @@@ 빈칸채우기
-    while @ @ @ :
+    while left < len(arr)/2 :
         # arr[left]과 arr[right]의 값을 서로 바꿈
         # temp = arr[left]
         # arr[left] = arr[right]
