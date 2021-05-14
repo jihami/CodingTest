@@ -2,7 +2,8 @@
 def solution(scores):
     count = 0
     for s in scores:
-        if 650 <= s and s < 800:
+        # 파이썬 문법에만 해다
+        if 650 <= s < 800:
             count+=1
     return count
 
