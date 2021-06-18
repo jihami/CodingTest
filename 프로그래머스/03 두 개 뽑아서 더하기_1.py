@@ -11,11 +11,9 @@ def solution(numbers):
             # numbers[i]는 첫 번째 선택한 숫자
             # numbers[j]는 두 번째 선택한 숫자
             두수의합 = numbers[i] + numbers[j]
-            if (두수의합) not in answer:
-                #list 끝부분에 값을 삽입
-                answer.append(두수의합)
-    answer.sort()
-    return answer
+            answer.append(두수의합)
+    #set(집합) 처리를 하면서 중복제거와 오름차순 정렬을 깔끔하게 해결
+    return list(set(answer))
 
 def main():
     numbers = [5, 0, 2, 7]
