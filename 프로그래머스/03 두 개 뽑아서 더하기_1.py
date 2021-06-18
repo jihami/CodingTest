@@ -3,12 +3,23 @@
 # 만들 수 있는 모든 수를 배열에 오름차순으로 담아 return 하도록
 # solution 함수를 완성해주세요.
 
-def main():
-    numbers = [5, 0, 2, 7]
-
 def solution(numbers):
-    answer = []
+    #answer는 비어있는 list(배열)
+    answer = list()# [= 얘랑 같음 anwser = ()]빈 리스트
+    for i in range(len(numbers)-1):
+        for j in range(i+1, len(numbers)):
+            # numbers[i]는 첫 번째 선택한 숫자
+            # numbers[j]는 두 번째 선택한 숫자
+            두수의합 = numbers[i] + numbers[j]
+            if (두수의합) not in answer:
+                #list 끝부분에 값을 삽입
+                answer.append(두수의합)
+    answer.sort()
     return answer
 
-if __name__ == "main":
+def main():
+    numbers = [5, 0, 2, 7]
+    print(solution(numbers))
+
+if __name__ == "__main__":
     main()
