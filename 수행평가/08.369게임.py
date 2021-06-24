@@ -1,13 +1,11 @@
-def solution(num):
-    cnt = 0
-
-    for i in range(1, num + 1):
-        if i % 10 == 3 or i % 10 == 6 or i % 10 == 9:
-            cnt += 1
-        if i // 10 % 10 == 3 or i // 10 % 10 == 6 or i // 10 % 10 == 9:
-            cnt += 1
-        if i // 100 % 10 == 3 or i // 100 % 10 == 6 or i // 100 % 10 == 9:
-            cnt += 1
-    return cnt
+def solution(number):
+   count = 0
+   for i in range(1,number+1):
+      current = i
+      while current != 0:
+         if current%10==3 or current%10==6 or current%10==9 :
+            count += 1
+         current = current // 10
+   return count
 number = 40
 print(solution(number))
