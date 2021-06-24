@@ -1,0 +1,12 @@
+def solution(numbers):
+    answer = list()
+    for i in range(len(numbers)):
+        for j in range(i+1, len(numbers)):
+            if numbers[i] + numbers[j] not in answer:
+                answer.append(numbers[i] + numbers[j])
+    answer.sort()
+    return answer
+numbers = [2,1,3,4,1]
+print(solution(numbers))
+numbers = [5,0,2,7]
+print(solution(numbers))
