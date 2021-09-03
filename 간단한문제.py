@@ -70,16 +70,26 @@ print(sum(nums))
 
 cook = ["피자", "김밥", "만두", "양념치킨", "족발", "피자", "김치만두", "쫄면", "쏘세지", "라면", "팥빙수", "김치전"]
 # print(len(cook)) #중복 허용 ver
-a=set(cook) #set이 중복 제거해줌
-print(len(a))
-resultc = list() #반복분 코드
+# a=set(cook) #set이 중복 제거해줌
+# print(len(a))
+# resultc = list() #반복분 코드
+# for x in cook:
+#     if x not in resultc:
+#         resultc.append(x)
+#     else:
+#         continue
+# ac=len(resultc)
+# print(ac)
+resultc = dict() #딕셔너리
 for x in cook:
-    if x not in resultc:
-        resultc.append(x)
-    else:
-        continue
+    resultc[x] = 1
 ac=len(resultc)
 print(ac)
 
+
 nums = [1, 2, 3, 4, 5]
 print(sum(nums)/len(nums))
+
+nums = [1, 2, 3, 4, 5]
+nums.reverse()
+print(nums)
