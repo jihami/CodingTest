@@ -108,3 +108,37 @@ print("-"*20, "17번","-"*20)
 data = [2, 4, 3, 1, 5, 10, 9]
 data.sort()
 print(data)
+
+print("-"*20, "18번","-"*20)
+a = "02:00"
+b = "03:10"
+if a[-2:] == "00":
+    print("정각입니다.")
+else:
+    print("정각이 아닙니다.")
+
+print("-"*20, "19번","-"*20)
+리스트 = ['intra.h', 'intra.c', 'define.h', 'run.py']
+for x in 리스트:
+    if x[-2:] == ".h":
+        print(x)
+
+print("-"*20, "20번","-"*20)
+for i in range(20):
+    print(str(0.1*i)[0:3])
+
+print("-"*20, "21번","-"*20)
+apart = [[101, 102], [201, 202], [301, 302]]
+for x in apart:
+    for y in x:
+        print(f'{y} 호')
+
+print("-"*20, "22번","-"*20)
+def pickup_even(arr):
+    answer = list()
+    for x in arr:
+        if x%2==0:
+            answer.append(x)
+    return answer
+a = pickup_even([3, 4, 5, 6, 7, 8])
+print(pickup_even(a))
