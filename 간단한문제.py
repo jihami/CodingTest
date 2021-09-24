@@ -93,3 +93,18 @@ print(sum(nums)/len(nums))
 nums = [1, 2, 3, 4, 5]
 nums.reverse()
 print(nums)
+
+print("-"*20, "15번","-"*20)
+interest = ['삼성전자', 'LG전자', 'Naver', 'SK하이닉스', '미래에셋대우']
+a="/".join(interest)
+print(a)
+
+print("-"*20, "16번","-"*20)
+string = "삼성전자/LG전자/Naver"
+a = string.split("/")
+print(a)
+
+print("-"*20, "17번","-"*20)
+data = [2, 4, 3, 1, 5, 10, 9]
+data.sort()
+print(data)
