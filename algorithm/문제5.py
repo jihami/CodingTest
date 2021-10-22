@@ -1,0 +1,13 @@
+'''5.빈 리스트에서 기존의 값들보다 큰 값이 추가될 때마다 카운팅
+(값의 범위는 0~100이다.)
+ex) 빈 리스트에서 [1, 3, 2, 6, 4, 9, 5]가 추가되는 상황
+'''
+list_1 = []
+list_2 = [1, 3, 2, 6, 4, 9, 5]
+count = 1
+for i in range(len(list_2)):
+    list_1.append(list_2[i])
+    if(list_1[i] > list_1[i-1]):
+        count += 1
+print(list_1)
+print(count)
