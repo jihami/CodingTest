@@ -9,11 +9,14 @@ count = 0
 #Q2. 결함 : i+1 ... 떄문에 인덱스 길이를 넘어갈 수 있음
 
 #i는 0부터 len(string)-1 만큼 반복
-for i in range(len(string)):
-    # if string[i] == "L": Q2 결함
-    if string[i] == "L" and i+len(find) <= len(string):
-        if string[i+1] == "O":
-            if string[i+2] == "V":
-                count += 1
-
-print(count)
+# for i in range(len(string)):
+#     # if string[i] == "L": Q2 결함
+#     if string[i] == "L" and i+len(find) <= len(string):
+#         if string[i+1] == "O":
+#             if string[i+2] == "V":
+#                 count += 1
+#
+# print(count)
+string = "ILOVKEFLOVEEL"
+find = "LOV"
+print( string.count(find) )
