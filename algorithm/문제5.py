@@ -31,7 +31,6 @@ print(count)'''
 
 #방법2
 arr = [1, 3, 2, 6, 4, 9, 5]
-result = list()
 count = 1
 max = arr[0]
 
